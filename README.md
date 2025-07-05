@@ -70,27 +70,6 @@ frontend/
 └── styles/
 └── globals.css # TailwindCSS + custom styles
 
----
-
-## 🚀 Getting Started
-
-```bash
-# Clone the repo
-git clone https://github.com/TeamGreen/HoloMentorX.git
-cd HoloMentorX
-
-## **🔹 Backend Setup**
-cd backend
-python -m venv venv310
-source venv310/bin/activate      # On Windows: .\venv310\Scripts\activate
-pip install -r requirements.txt
-uvicorn app:app --reload --port 8000
-
-## **🔹 Frontend Setup**
-cd frontend
-npm install
-npm run dev
-
 ## **👥 Team Green – Qubic Track**
 Name	                Role
 Sana	      Team Lead, System Architect
@@ -117,3 +96,25 @@ AI reasoning via Groq + LLaMA
 MIT — Free to use, open-source
 
 "The jungle had owls. The blockchain has mentors." — Team Green 🦉🌐
+
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/TeamGreen/HoloMentorX.git
+cd HoloMentorX
+
+## **🔹 Backend Setup**
+cd backend
+python -m venv venv310
+source venv310/bin/activate      # On Windows: .\venv310\Scripts\activate
+pip install -r requirements.txt
+uvicorn app:app --reload --port 8000
+
+## **🔹 Frontend Setup**
+cd frontend
+npm install
+npm run dev
