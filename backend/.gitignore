@@ -45,3 +45,10 @@ __pycache__/
 # Node.js
 node_modules/
 backend/venv310/
+venv310/
+.env
+__pycache__/
+*.pyc
+.idea/
+*.log
+.DS_Store
