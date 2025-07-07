@@ -1,0 +1,18 @@
+{
+  "SampleCalculator": {
+    "timestamp": "2025-07-03T12:00:00Z",
+    "function_count": 1,
+    "functions": [
+      "int add(int a, int b) {"
+    ],
+    "line_count": 3,
+    "contract_name": "SampleCalculator"
+  },
+  "TestContract": {
+    "timestamp": "2025-07-03T12:02:00Z",
+    "function_count": 0,
+    "functions": [],
+    "line_count": 7,
+    "contract_name": "TestContract"
+  }
+}

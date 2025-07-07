@@ -1,0 +1,11 @@
+{
+  "name": "Bad Logic",
+  "description": "A buggy contract that always denies eligibility.",
+  "methods": [
+    {
+      "name": "alwaysDeny",
+      "inputs": ["int a", "int b"],
+      "outputs": ["int"]
+    }
+  ]
+}

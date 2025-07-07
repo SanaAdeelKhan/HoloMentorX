@@ -1,0 +1,11 @@
+{
+  "name": "Loan Checker",
+  "description": "Checks if a user is eligible for a loan based on income and credit score.",
+  "methods": [
+    {
+      "name": "checkEligibility",
+      "inputs": ["int income", "int creditScore"],
+      "outputs": ["int"]
+    }
+  ]
+}

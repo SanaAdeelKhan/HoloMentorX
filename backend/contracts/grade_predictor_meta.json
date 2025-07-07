@@ -1,0 +1,11 @@
+{
+  "name": "Grade Predictor",
+  "description": "Predicts grade on a 4-point scale based on exam score.",
+  "methods": [
+    {
+      "name": "predictGrade",
+      "inputs": ["int score"],
+      "outputs": ["int"]
+    }
+  ]
+}

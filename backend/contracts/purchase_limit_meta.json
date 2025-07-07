@@ -1,0 +1,11 @@
+{
+  "name": "Purchase Limit",
+  "description": "Restricts underage users from buying more than 2 units.",
+  "methods": [
+    {
+      "name": "canPurchase",
+      "inputs": ["int age", "int quantity"],
+      "outputs": ["int"]
+    }
+  ]
+}

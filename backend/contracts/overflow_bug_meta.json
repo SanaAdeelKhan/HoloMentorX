@@ -1,0 +1,11 @@
+  {
+  "name": "Overflow Bug",
+  "description": "Adds two integers without overflow protection.",
+  "methods": [
+    {
+      "name": "unsafeAdd",
+      "inputs": ["int a", "int b"],
+      "outputs": ["int"]
+    }
+  ]
+}

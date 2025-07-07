@@ -1,0 +1,38 @@
+{
+  "loan_checker": {
+    "tests": [
+      { "method": "checkEligibility", "inputs": [60000, 750], "expected_output": 1 },
+      { "method": "checkEligibility", "inputs": [40000, 750], "expected_output": 0 },
+      { "method": "checkEligibility", "inputs": [60000, 650], "expected_output": 0 }
+    ]
+  },
+  "bad_logic": {
+    "tests": [
+      { "method": "alwaysDeny", "inputs": [10, 20], "expected_output": 0 },
+      { "method": "alwaysDeny", "inputs": [999, 999], "expected_output": 0 }
+    ]
+  },
+  "grade_predictor": {
+    "tests": [
+      { "method": "predictGrade", "inputs": [95], "expected_output": 4 },
+      { "method": "predictGrade", "inputs": [85], "expected_output": 3 },
+      { "method": "predictGrade", "inputs": [75], "expected_output": 2 },
+      { "method": "predictGrade", "inputs": [65], "expected_output": 1 },
+      { "method": "predictGrade", "inputs": [50], "expected_output": 0 }
+    ]
+  },
+  "purchase_limit": {
+    "tests": [
+      { "method": "canPurchase", "inputs": [17, 3], "expected_output": 0 },
+      { "method": "canPurchase", "inputs": [18, 5], "expected_output": 1 },
+      { "method": "canPurchase", "inputs": [16, 1], "expected_output": 1 }
+    ]
+  },
+  "overflow_bug": {
+    "tests": [
+      { "method": "unsafeAdd", "inputs": [2147483647, 1], "expected_output": -2147483648 },
+      { "method": "unsafeAdd", "inputs": [10, 20], "expected_output": 30 }
+    ]
+  }
+}
+ 
