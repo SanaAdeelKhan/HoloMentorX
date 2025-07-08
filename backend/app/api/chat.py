@@ -9,9 +9,11 @@ router = APIRouter()
 @router.post("/chat", response_model=ChatResponse)
 async def chat_with_llama(request: ChatRequest):
     message = request.message.strip()
+    contract = request.contract.strip() if request.contract else ""
 
     prompt = [
-        {"role": "system", "content": "You are a helpful and friendly assistant."},
+        {"role": "system", "content": "You are a smart contract expert. Use the contract context to answer user questions."},
+        {"role": "user", "content": f"Contract:\n{contract}"},
         {"role": "user", "content": message}
     ]
 
@@ -35,6 +37,6 @@ async def chat_with_llama(request: ChatRequest):
             content = response.json()["choices"][0]["message"]["content"]
             return {"answer": content.strip()}
         else:
-            return {"answer": "❌ LLaMA response failed."}
+            return {"answer": f"❌ LLaMA response failed: {response.status_code}"}
     except Exception as e:
         return {"answer": f"❌ Error during chat: {str(e)}"}

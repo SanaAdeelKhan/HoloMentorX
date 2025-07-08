@@ -6,6 +6,9 @@ load_dotenv()
 
 # ✅ Import API route modules
 from app.api import explain, audit, test, chat
+from app.api import chat  # 👈 adjust path if needed
+
+
 
 
 # ✅ Initialize FastAPI app
@@ -28,7 +31,7 @@ app.add_middleware(
 app.include_router(explain.router, prefix="/explain", tags=["explain"])
 app.include_router(audit.router, prefix="/audit", tags=["audit"])
 app.include_router(test.router, prefix="/test", tags=["test"])
-app.include_router(chat.router, prefix="/chat", tags=["chat"])
+app.include_router(chat.router)
 
 # ✅ Optional root endpoint
 @app.get("/")

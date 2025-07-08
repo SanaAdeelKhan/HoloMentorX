@@ -21,8 +21,10 @@ class AuditResponse(BaseModel):
     issues: List[str]
 
 # 🔹 For Chat
+
 class ChatRequest(BaseModel):
     message: str
+    contract: str = ""
 
 class ChatResponse(BaseModel):
     answer: str
